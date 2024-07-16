@@ -11,11 +11,6 @@ import remarkUnwrapImages from 'remark-unwrap-images'
 import shiki from 'shiki'
 import { unifiedConditional } from 'unified-conditional'
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-}
-
 function remarkMDXLayout(source, metaName) {
   let parser = Parser.extend(jsx())
   let parseOptions = { ecmaVersion: 'latest', sourceType: 'module' }
@@ -41,7 +36,23 @@ function remarkMDXLayout(source, metaName) {
   }
 }
 
-async function getConfig() {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  reactStrictMode: true,
+  swcMinify: true,
+  experimental: {
+    appDir: true,
+  },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = { fs: false, module: false }
+    }
+    return config
+  },
+}
+
+export default async function createConfig() {
   let highlighter = await shiki.getHighlighter({
     theme: 'css-variables',
   })
@@ -79,7 +90,9 @@ async function getConfig() {
     },
   })
 
-  return withMDX(nextConfig)
+  return withMDX({
+    ...nextConfig,
+    // Add Cloudflare Pages specific settings
+    target: 'experimental-serverless-trace',
+  })
 }
-
-export default getConfig()
