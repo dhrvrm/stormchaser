@@ -41,9 +41,6 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    appDir: true,
-  },
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = { fs: false, module: false }
@@ -52,7 +49,7 @@ const nextConfig = {
   },
 }
 
-export default async function createConfig() {
+const createConfig = async () => {
   let highlighter = await shiki.getHighlighter({
     theme: 'css-variables',
   })
@@ -90,9 +87,7 @@ export default async function createConfig() {
     },
   })
 
-  return withMDX({
-    ...nextConfig,
-    // Add Cloudflare Pages specific settings
-    target: 'experimental-serverless-trace',
-  })
+  return withMDX(nextConfig)
 }
+
+export default createConfig
