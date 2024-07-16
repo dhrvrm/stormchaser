@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-
+export const runtime = 'edge'
 export async function POST(req, res) {
   const token = process.env.HUBSPOT_ACCESS_TOKEN
   const endpoint = 'https://api.hubapi.com/crm/v3/objects/contacts'

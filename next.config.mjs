@@ -41,7 +41,7 @@ function remarkMDXLayout(source, metaName) {
   }
 }
 
-export default async function config() {
+async function getConfig() {
   let highlighter = await shiki.getHighlighter({
     theme: 'css-variables',
   })
@@ -81,3 +81,5 @@ export default async function config() {
 
   return withMDX(nextConfig)
 }
+
+export default getConfig()
