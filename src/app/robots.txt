@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/*
+Disallow: /cache/
+Disallow: /server/
+
+Sitemap: https://vaayudigital.in/sitemap.xml

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://vaayudigital.in/</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/contact</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/work</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/about</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/process</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/blog</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/work/family-fund</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/work/unseal</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/work/phobia</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/blog/future-of-web-development</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/blog/3-lessons-we-learned-going-back-to-the-office</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vaayudigital.in/blog/a-short-guide-to-component-naming</loc>
+  <lastmod>2024-07-16T15:02:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
